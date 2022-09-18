@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    android:background="@color/mid"
+    android:orientation="horizontal"
+    android:clickable="true"
+    
+    >
+
+    <ImageView
+        android:id="@+id/location_icon"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        app:srcCompat="@drawable/ic_outline_location_on_24" />
+
+    <TextView
+        android:id="@+id/location_name"
+        android:layout_width="267dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:text="Your Mom's house" />
+
+    <TextView
+        android:id="@+id/location_distance"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:text="0km" />
+</LinearLayout>
